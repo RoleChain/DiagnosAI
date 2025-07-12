@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Header = () => {
@@ -19,9 +19,9 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <Heart className="w-5 h-5 text-white" />
+              <BookOpen className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-foreground">MedAI</span>
+            <span className="text-xl font-bold text-foreground">EduAI</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -40,7 +40,7 @@ export const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost">Sign In</Button>
-            <Button variant="medical">Get Started</Button>
+            <Button variant="educational">Get Started</Button>
           </div>
           
           {/* Mobile Menu Button */}
@@ -72,7 +72,7 @@ export const Header = () => {
               ))}
               <div className="flex flex-col gap-2 pt-4">
                 <Button variant="ghost" className="justify-start">Sign In</Button>
-                <Button variant="medical" className="justify-start">Get Started</Button>
+                <Button variant="educational" className="justify-start">Get Started</Button>
               </div>
             </nav>
           </div>

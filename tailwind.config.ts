@@ -70,7 +70,7 @@ export default {
 				'gradient-feature': 'var(--gradient-feature)'
 			},
 			boxShadow: {
-				'medical': 'var(--shadow-medical)',
+				'educational': 'var(--shadow-educational)',
 				'card': 'var(--shadow-card)',
 				'glow': 'var(--shadow-glow)'
 			},

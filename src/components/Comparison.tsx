@@ -3,39 +3,39 @@ import { Button } from "@/components/ui/button";
 
 const comparisons = [
   {
-    feature: "Availability",
-    traditional: "Business hours only",
-    ai: "24/7 instant access",
+    feature: "Learning Pace",
+    traditional: "Fixed curriculum schedule",
+    ai: "Personalized adaptive pace",
     icon: Clock
   },
   {
-    feature: "Wait Time",
+    feature: "Feedback Time",
     traditional: "Days to weeks",
-    ai: "Instant response",
+    ai: "Instant AI feedback",
     icon: Zap
   },
   {
-    feature: "Cost per Consultation",
-    traditional: "$200-500+",
-    ai: "Starting at $19.99/month unlimited",
+    feature: "Cost per Student",
+    traditional: "$10,000+ per year",
+    ai: "Starting at $29/month",
     icon: DollarSign
   },
   {
-    feature: "Initial Assessment",
-    traditional: "Limited time slots",
-    ai: "Comprehensive AI analysis",
+    feature: "Learning Support",
+    traditional: "Limited office hours",
+    ai: "24/7 AI tutoring available",
     icon: Users
   },
   {
-    feature: "Follow-up Support",
-    traditional: "Additional appointments",
-    ai: "Continuous monitoring included",
+    feature: "Progress Tracking",
+    traditional: "Periodic assessments",
+    ai: "Real-time progress analytics",
     icon: Check
   },
   {
-    feature: "Travel Required",
-    traditional: "Yes, to clinic/hospital",
-    ai: "No, from anywhere",
+    feature: "Location Requirement",
+    traditional: "Physical classroom attendance",
+    ai: "Learn from anywhere",
     icon: X
   }
 ];
@@ -46,29 +46,29 @@ export const Comparison = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Why Choose AI{" "}
+            Why Choose AI Learning{" "}
             <span className="bg-gradient-hero bg-clip-text text-transparent">
               Over Traditional
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See how our AI-powered medical assistant compares to traditional healthcare 
-            methods and discover the advantages of modern digital health solutions.
+            See how our AI-powered learning platform compares to traditional education 
+            methods and discover the advantages of modern personalized learning.
           </p>
         </div>
         
         <div className="max-w-6xl mx-auto">
-          <div className="bg-card rounded-2xl shadow-medical overflow-hidden border border-border/50">
+          <div className="bg-card rounded-2xl shadow-educational overflow-hidden border border-border/50">
             {/* Header */}
             <div className="grid grid-cols-3 bg-gradient-hero text-white">
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold">Feature</h3>
               </div>
               <div className="p-6 text-center border-l border-white/20">
-                <h3 className="text-xl font-semibold">Traditional Healthcare</h3>
+                <h3 className="text-xl font-semibold">Traditional Education</h3>
               </div>
               <div className="p-6 text-center border-l border-white/20">
-                <h3 className="text-xl font-semibold">AI Medical Assistant</h3>
+                <h3 className="text-xl font-semibold">AI Learning Platform</h3>
               </div>
             </div>
             
@@ -97,7 +97,7 @@ export const Comparison = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="medical" size="xl" className="group">
+            <Button variant="educational" size="xl" className="group">
               Experience the Difference
               <Check className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </Button>

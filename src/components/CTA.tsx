@@ -7,11 +7,11 @@ export const CTA = () => {
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Healthcare Experience?
+            Ready to Transform Your Learning Experience?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join millions of users who trust our AI-powered medical assistant 
-            for reliable, instant health guidance whenever they need it.
+            Join thousands of students and educators who are already using our AI-powered 
+            learning platform to achieve better educational outcomes.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -20,22 +20,22 @@ export const CTA = () => {
               size="xl" 
               className="bg-white text-primary hover:bg-white/90 shadow-lg group"
             >
-              Start Free Consultation
+              Start Learning Free
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
-              variant="medical-outline" 
+              variant="educational-outline" 
               size="xl" 
               className="border-white text-white hover:bg-white hover:text-primary"
             >
               <Download className="w-5 h-5" />
-              Download App
+              Try Demo
             </Button>
           </div>
           
           <div className="text-white/80 text-sm">
-            <p className="mb-2">✓ No credit card required  ✓ Free 7-day trial  ✓ Cancel anytime</p>
-            <p>Trusted by healthcare professionals worldwide</p>
+            <p className="mb-2">✓ No credit card required  ✓ Free forever plan  ✓ Cancel anytime</p>
+            <p>Trusted by educators and students worldwide</p>
           </div>
         </div>
       </div>
