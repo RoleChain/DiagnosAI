@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { StatsSection } from '@/components/StatsSection';
 
 // Lazy load components that are below the fold
 const Features = lazy(() =>
@@ -34,11 +35,6 @@ const FAQ = lazy(() =>
 const CTA = lazy(() =>
 	import('@/components/CTA').then((module) => ({ default: module.CTA })),
 );
-const StatsSection = lazy(() =>
-	import('@/components/StatsSection').then((module) => ({
-		default: module.StatsSection,
-	})),
-);
 const ScrollToTop = lazy(() =>
 	import('@/components/ScrollToTop').then((module) => ({
 		default: module.ScrollToTop,
@@ -58,10 +54,7 @@ const Index = () => {
 			<Header />
 			<main>
 				<Hero />
-
-				<Suspense fallback={<LoadingSpinner />}>
-					<StatsSection />
-				</Suspense>
+				<StatsSection />
 
 				<Suspense fallback={<LoadingSpinner />}>
 					<Features />
