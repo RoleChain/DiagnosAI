@@ -52,7 +52,7 @@ export const Hero = () => {
 				{/* CTA buttons */}
 				<div className='text-center mb-6 sm:mb-8 lg:mb-10'>
 					<div className='flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0'>
-						<button className='w-full sm:w-auto bg-gradient-to-r from-[#0073E6] to-[#2BDE96] hover:from-blue-600 hover:to-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2'>
+						{/* <button className='w-full sm:w-auto bg-gradient-to-r from-[#0073E6] to-[#2BDE96] hover:from-blue-600 hover:to-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2'>
 							<Image
 								src={'/images/whatsapp.png'}
 								alt='Chat Interface'
@@ -63,7 +63,7 @@ export const Hero = () => {
 							/>
 							Talk to DiagnosAI
 							<ArrowRight className='w-4 h-4 sm:w-5 sm:h-5' />
-						</button>
+						</button> */}
 						<button className='w-full sm:w-auto border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-2'>
 							Start a Consultation
 							<ArrowRight className='w-4 h-4 sm:w-5 sm:h-5' />
