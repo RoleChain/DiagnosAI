@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { Shield, ArrowRight } from 'lucide-react';
-import heroBackground from '@/assets/hero-bg.png';
 import heroMain from '@/assets/hero-main.png';
 import audioPlayer from '@/assets/audio-player.png';
 import chatInterface from '@/assets/chat-interface.png';

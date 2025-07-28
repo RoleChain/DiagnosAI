@@ -79,7 +79,7 @@ export const Reviews = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  "{review.text}"
+                &quot;{review.text}&quot;
                 </p>
               </div>
               

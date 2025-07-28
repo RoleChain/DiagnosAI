@@ -52,8 +52,16 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ..._props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ..._props }) => <ChevronRight className="h-4 w-4" />,
+        Chevron: ({ orientation, ...chevronProps }) => {
+          if (orientation === "left") {
+            return <ChevronLeft className="h-4 w-4" {...chevronProps} />;
+          }
+          if (orientation === "right") {
+            return <ChevronRight className="h-4 w-4" {...chevronProps} />;
+          }
+          // Return an empty span to satisfy the type
+          return <span style={{ display: 'none' }} />;
+        },
       }}
       {...props}
     />
