@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 export const CTA = () => {
 	return (
-		<section className='py-24 bg-gradient-to-r from-[#0073E6] to-[#2BDE96]'>
+		<section className='py-10 bg-gradient-to-r from-[#0073E6] to-[#2BDE96]'>
 			<div className='container mx-auto px-6 text-center'>
 				<div className='max-w-4xl mx-auto'>
 					<h2 className='text-4xl lg:text-5xl font-bold text-white mb-6'>
