@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import { Shield, ArrowRight } from 'lucide-react';
 import heroMain from '@/assets/hero-main.png';
@@ -22,7 +21,7 @@ export const Hero = () => {
 
 			<div className='relative z-10 container mx-auto px-4 sm:px-6 flex-1 flex flex-col justify-center pt-16 sm:pt-20'>
 				{/* Trust badge */}
-				<div className='text-center mb-4 sm:mb-6 lg:mb-4'>
+				<div className='text-center mt-14 mb-4 sm:mb-6 lg:mb-4'>
 					<div className='inline-flex items-center gap-2 bg-white text-blue-700 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium shadow-sm'>
 						<Shield className='w-3 h-3 sm:w-4 sm:h-4' />
 						<span className='hidden sm:inline'>
@@ -72,7 +71,7 @@ export const Hero = () => {
 
 				{/* Main illustration area - takes remaining space */}
 				<div className='relative flex justify-center items-center flex-1 min-h-0'>
-					<div className='relative w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl'>
+					<div className='relative w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl mt-auto mb-[2rem]'>
 						{/* Chat interface using actual image */}
 						<div className='absolute left-0 sm:left-6 lg:left-5 top-4 sm:top-6 lg:top-10 z-20 transform -rotate-3'>
 							<Image
@@ -80,6 +79,8 @@ export const Hero = () => {
 								title='DiagnosAI Chat Interface'
 								alt='DiagnosAI Chat Interface'
 								className='w-24 sm:w-32 md:w-48 lg:w-64 xl:max-w-xs rounded-xl sm:rounded-2xl'
+								priority
+								quality={85}
 							/>
 						</div>
 
@@ -91,6 +92,8 @@ export const Hero = () => {
 									title='Woman with Robot'
 									alt='Woman with Robot'
 									className='w-full h-full object-cover rounded-xl sm:rounded-2xl'
+									priority
+									quality={85}
 								/>
 							</div>
 						</div>
@@ -102,6 +105,8 @@ export const Hero = () => {
 								title='Medical Report'
 								alt='Medical Report'
 								className='w-24 sm:w-32 md:w-48 lg:w-64 xl:max-w-xs rounded-xl sm:rounded-2xl '
+								priority
+								quality={85}
 							/>
 						</div>
 
@@ -112,6 +117,7 @@ export const Hero = () => {
 								title='Audio Player'
 								alt='Audio Player'
 								className='h-8 sm:h-10 md:h-12 lg:h-16 object-contain'
+								quality={85}
 							/>
 						</div>
 					</div>

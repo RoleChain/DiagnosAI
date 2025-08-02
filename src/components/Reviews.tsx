@@ -66,7 +66,8 @@ export const Reviews = () => {
           {reviews.map((review, index) => (
             <div 
               key={index}
-              className="bg-card rounded-xl p-8 shadow-card hover:shadow-medical transition-all duration-300 hover:-translate-y-1 border border-border/50 relative"
+              className="bg-card rounded-xl p-8 shadow-card hover:shadow-medical transition-all duration-300 hover:-translate-y-1 relative"
+              style={{ border: '1px solid #E2E8F080' }}
             >
               <div className="absolute top-6 right-6 text-primary/20">
                 <Quote className="w-8 h-8" />

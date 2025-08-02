@@ -63,7 +63,7 @@ const features = [
 export const Features = () => {
 	return (
 		<section className='py-6' id='features'>
-			<div className='container mx-auto px-6'>
+			<div className='container mx-auto px-6 mb-[36px]'>
 				{/* Header */}
 				<div className='text-center mb-16'>
 					<h2 className='text-4xl lg:text-5xl font-bold text-gray-900 mb-4'>

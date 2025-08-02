@@ -10,6 +10,7 @@ export function Header() {
 	const navItems = [
 		{ label: 'Features', href: '#features' },
 		{ label: 'How it Works', href: '#how-it-works' },
+		{ label: 'Pricing', href: '/pricing' },
 		{ label: 'About', href: '#about' },
 		{ label: 'Contact', href: '#contact' },
 	];
@@ -18,6 +19,13 @@ export function Header() {
 		e: React.MouseEvent<HTMLAnchorElement>,
 		href: string,
 	) => {
+		// If it's an external page link (starts with /), don't prevent default
+		if (href.startsWith('/')) {
+			setIsMenuOpen(false); // Just close mobile menu
+			return;
+		}
+
+		// Handle anchor links with smooth scrolling
 		e.preventDefault();
 		const targetId = href.replace('#', '');
 		const targetElement = document.getElementById(targetId);
@@ -32,7 +40,7 @@ export function Header() {
 	};
 
 	return (
-		<header className='fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200/50'>
+		<header className='fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm' style={{ borderBottom: '1px solid #E2E8F080' }}>
 			<div className='container mx-auto px-6'>
 				<div className='flex items-center justify-between h-16'>
 					{/* Logo */}

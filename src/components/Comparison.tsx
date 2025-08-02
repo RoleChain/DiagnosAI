@@ -61,7 +61,7 @@ export const Comparison = () => {
 
 				<div className='max-w-6xl mx-auto'>
 					{/* Desktop Table View (lg and above) */}
-					<div className='hidden lg:block bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200'>
+					<div className='hidden lg:block bg-white rounded-2xl shadow-lg overflow-hidden' style={{ border: '1px solid #E2E8F080' }}>
 						{/* Header */}
 						<div className='grid grid-cols-3 bg-gradient-to-r from-[#0073E6] to-[#2BDE96] text-white'>
 							<div className='p-6 text-center'>
@@ -81,9 +81,10 @@ export const Comparison = () => {
 						{comparisons.map((comparison, index) => (
 							<div
 								key={index}
-								className={`grid grid-cols-3 border-b border-gray-200/50 last:border-b-0 hover:bg-gray-50/30 transition-colors ${
+								className={`grid grid-cols-3 last:border-b-0 hover:bg-gray-50/30 transition-colors ${
 									index % 2 === 0 ? 'bg-white' : 'bg-gray-50/20'
-								}`}>
+								}`}
+								style={{ borderBottom: index === comparisons.length - 1 ? 'none' : '1px solid #E2E8F080' }}>
 								<div className='p-6 flex items-center gap-3'>
 									<div className='w-8 h-8 bg-gradient-to-r from-[#0073E6] to-[#2BDE96] rounded-lg flex items-center justify-center'>
 										<comparison.icon className='w-4 h-4 text-white' />
@@ -92,12 +93,12 @@ export const Comparison = () => {
 										{comparison.feature}
 									</span>
 								</div>
-								<div className='p-6 border-l border-gray-200/50 flex items-center'>
+								<div className='p-6 flex items-center' style={{ borderLeft: '1px solid #E2E8F080' }}>
 									<span className='text-gray-600'>
 										{comparison.traditional}
 									</span>
 								</div>
-								<div className='p-6 border-l border-gray-200/50 flex items-center'>
+								<div className='p-6 flex items-center' style={{ borderLeft: '1px solid #E2E8F080' }}>
 									<span className='text-blue-600 font-semibold'>
 										{comparison.ai}
 									</span>
@@ -111,7 +112,8 @@ export const Comparison = () => {
 						{comparisons.map((comparison, index) => (
 							<div
 								key={index}
-								className='bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-200 overflow-hidden'>
+								className='bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden'
+								style={{ border: '1px solid #E2E8F080' }}>
 								{/* Feature Header */}
 								<div className='bg-gradient-to-r from-[#0073E6] to-[#2BDE96] text-white p-4 sm:p-6'>
 									<div className='flex items-center gap-3'>

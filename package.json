@@ -6,9 +6,18 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "build:analyze": "ANALYZE=true next build",
+    "export": "next build && next export",
+    "preview": "next build && next start",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "postbuild": "npm run type-check"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^15.5.0",
+    "@svgr/webpack": "^8.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -26,7 +35,8 @@
     "recharts": "^3.1.0",
     "sonner": "^2.0.6",
     "tailwind-merge": "^3.3.1",
-    "vaul": "^1.1.2"
+    "vaul": "^1.1.2",
+    "web-vitals": "^4.3.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -43,5 +53,21 @@
     "eslint-config-next": "15.4.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
-import accuracySVG from '@/assets/icons/accuracy.svg';
-import heartsSVG from '@/assets/icons/hearts.svg';
 import Image from 'next/image';
 
 export const StatsSection = () => {
@@ -17,7 +15,7 @@ export const StatsSection = () => {
 						</div>
 						<div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center'>
 							<Image
-								src={accuracySVG}
+								src='/assets/icons/accuracy.svg'
 								title='Accuracy icon'
 								alt='Accuracy icon'
 								height={20}
@@ -48,7 +46,7 @@ export const StatsSection = () => {
 						</div>
 						<div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center'>
 							<Image
-								src={heartsSVG}
+								src='/assets/icons/hearts.svg'
 								title='Heart icon'
 								alt='Heart icon'
 								height={20}
@@ -70,7 +68,7 @@ export const StatsSection = () => {
 							</div>
 							<div className='w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center'>
 								<Image
-									src={accuracySVG}
+									src='/assets/icons/accuracy.svg'
 									title='Accuracy Icon'
 									alt='Accuracy Icon'
 									height={20}
@@ -103,7 +101,7 @@ export const StatsSection = () => {
 							</div>
 							<div className='w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center'>
 								<Image
-									src={heartsSVG}
+									src='/assets/icons/hearts.svg'
 									title='Heart icon'
 									alt='Heart icon'
 									height={20}
@@ -123,7 +121,7 @@ export const StatsSection = () => {
 							</div>
 							<div className='w-11 h-11 bg-blue-100 rounded-full flex items-center justify-center'>
 								<Image
-									src={accuracySVG}
+									src='/assets/icons/accuracy.svg'
 									title='Accuracy icon'
 									alt='Accuracy icon'
 									height={20}
@@ -156,7 +154,7 @@ export const StatsSection = () => {
 							</div>
 							<div className='w-11 h-11 bg-blue-100 rounded-full flex items-center justify-center'>
 								<Image
-									src={heartsSVG}
+									src='/assets/icons/hearts.svg'
 									title='Heart icon'
 									alt='Heart icon'
 									height={20}

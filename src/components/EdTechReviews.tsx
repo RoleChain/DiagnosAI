@@ -67,7 +67,7 @@ export const Reviews = () => {
 					{reviews.map((review, index) => (
 						<div
 							key={index}
-							className='bg-card rounded-xl p-8 shadow-card hover:shadow-educational transition-all duration-300 hover:-translate-y-1 border border-gray-200 relative'>
+							className='bg-card rounded-xl p-8 shadow-card hover:shadow-educational transition-all duration-300 hover:-translate-y-1 border border-[#ECEEF1] relative'>
 							<div className='absolute top-6 right-6 text-[#C9D5E1]'>
 								<Quote className='w-8 h-8' />
 							</div>
@@ -102,27 +102,27 @@ export const Reviews = () => {
 				</div>
 
 				{/* Summary stats */}
-				<div className='bg-gradient-to-r from-[#0073E6] to-[#2BDE96] rounded-2xl p-12 text-center'>
-					<div className='grid md:grid-cols-3 gap-8 text-white'>
-						<div>
-							<div className='flex items-center justify-center gap-1 mb-2'>
+				<div className='bg-gradient-to-r from-[#0073E6] to-[#2BDE96] rounded-2xl p-8 sm:p-12 text-center'>
+					<div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-white max-w-5xl mx-auto'>
+						<div className='flex flex-col items-center justify-center py-4'>
+							<div className='flex items-center justify-center gap-1 mb-4'>
 								{[...Array(5)].map((_, i) => (
 									<Star
 										key={i}
-										className='w-6 h-6 fill-yellow-400 text-yellow-400'
+										className='w-5 h-5 sm:w-6 sm:h-6 fill-yellow-400 text-yellow-400'
 									/>
 								))}
 							</div>
-							<div className='text-3xl font-bold mb-1'>4.9/5</div>
-							<div className='text-white/80'>Average Rating</div>
+							<div className='text-2xl sm:text-3xl font-bold mb-3'>4.9/5</div>
+							<div className='text-white/80 text-sm sm:text-base'>Average Rating</div>
 						</div>
-						<div>
-							<div className='text-3xl font-bold mb-1'>50,000+</div>
-							<div className='text-white/80'>Happy Users</div>
+						<div className='flex flex-col items-center justify-center py-4'>
+							<div className='text-2xl sm:text-3xl font-bold mb-3'>50,000+</div>
+							<div className='text-white/80 text-sm sm:text-base'>Happy Users</div>
 						</div>
-						<div>
-							<div className='text-3xl font-bold mb-1'>95%</div>
-							<div className='text-white/80'>Would Recommend</div>
+						<div className='flex flex-col items-center justify-center py-4'>
+							<div className='text-2xl sm:text-3xl font-bold mb-3'>95%</div>
+							<div className='text-white/80 text-sm sm:text-base'>Would Recommend</div>
 						</div>
 					</div>
 				</div>

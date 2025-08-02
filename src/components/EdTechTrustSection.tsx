@@ -59,7 +59,8 @@ export const TrustSection = () => {
 					{trustPoints.map((point, index) => (
 						<div
 							key={index}
-							className='text-center p-6 rounded-xl bg-card border border-border/50 hover:shadow-card transition-all duration-300'>
+							className='text-center p-6 rounded-xl bg-card hover:shadow-card transition-all duration-300'
+							style={{ border: '1px solid #E2E8F080' }}>
 							<div className='w-12 h-12 bg-gradient-to-r from-[#0073E6] to-[#2BDE96] rounded-lg flex items-center justify-center mx-auto mb-4'>
 								<point.icon className='w-6 h-6 text-white' />
 							</div>

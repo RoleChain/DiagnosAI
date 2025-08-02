@@ -1,62 +1,35 @@
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { StatsSection } from '@/components/StatsSection';
-
-// Lazy load components that are below the fold
-const Features = lazy(() =>
-	import('@/components/EdTechFeatures').then((module) => ({
-		default: module.Features,
-		ssr: false,
-	})),
-);
-const HowItWorks = lazy(() =>
-	import('@/components/EdTechHowItWorks').then((module) => ({
-		default: module.HowItWorks,
-		ssr: false,
-	})),
-);
-const TrustSection = lazy(() =>
-	import('@/components/EdTechTrustSection').then((module) => ({
-		default: module.TrustSection,
-		ssr: false,
-	})),
-);
-const Comparison = lazy(() =>
-	import('@/components/Comparison').then((module) => ({
-		default: module.Comparison,
-		ssr: false,
-	})),
-);
-const Reviews = lazy(() =>
-	import('@/components/EdTechReviews').then((module) => ({
-		default: module.Reviews,
-		ssr: false,
-	})),
-);
-const FAQ = lazy(() =>
-	import('@/components/EdTechFAQ').then((module) => ({
-		default: module.FAQ,
-		ssr: false,
-	})),
-);
-const CTA = lazy(() =>
-	import('@/components/CTA').then((module) => ({
-		default: module.CTA,
-		ssr: false,
-	})),
-);
-const ScrollToTop = lazy(() =>
-	import('@/components/ScrollToTop').then((module) => ({
-		default: module.ScrollToTop,
-		ssr: false,
-	})),
-);
+import { Features } from '@/components/EdTechFeatures';
+import { HowItWorks } from '@/components/EdTechHowItWorks';
+import { TrustSection } from '@/components/EdTechTrustSection';
+import { Comparison } from '@/components/Comparison';
+import { Reviews } from '@/components/EdTechReviews';
+import { FAQ } from '@/components/EdTechFAQ';
+import { CTA } from '@/components/CTA';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 // Loading component for better UX
 const LoadingSpinner = () => (
 	<div className='flex justify-center items-center py-8'>
 		<div className='animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600'></div>
+	</div>
+);
+
+// Skeleton loading components for better UX
+const FeaturesSkeleton = () => (
+	<div className='py-16 px-4'>
+		<div className='container mx-auto'>
+			<div className='h-8 bg-gray-200 rounded-md mb-4 mx-auto max-w-md animate-pulse'></div>
+			<div className='h-4 bg-gray-200 rounded-md mb-8 mx-auto max-w-2xl animate-pulse'></div>
+			<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+				{[1, 2, 3].map((i) => (
+					<div key={i} className='bg-gray-200 h-64 rounded-lg animate-pulse'></div>
+				))}
+			</div>
+		</div>
 	</div>
 );
 
@@ -68,7 +41,7 @@ const Index = () => {
 				<Hero />
 				<StatsSection />
 
-				<Suspense fallback={<LoadingSpinner />}>
+				<Suspense fallback={<FeaturesSkeleton />}>
 					<Features />
 				</Suspense>
 
