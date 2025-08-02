@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check, Star, ArrowRight, Zap, Shield, Users } from 'lucide-react';
 import { Header } from '@/components/Header';
-import { FAQ } from '@/components/FAQ';
+import { FAQ } from '@/components/EdTechFAQ';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

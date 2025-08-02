@@ -1,7 +1,8 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/logo.png';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export function Header() {
@@ -44,7 +45,7 @@ export function Header() {
 			<div className='container mx-auto px-6'>
 				<div className='flex items-center justify-between h-16'>
 					{/* Logo */}
-					<div className='flex items-center gap-3'>
+					<Link href='/' className='flex items-center gap-3 hover:opacity-80 transition-opacity'>
 						<div className='w-10 h-10 rounded-lg flex items-center justify-center shadow-sm'>
 							<Image
 								src={logo}
@@ -56,7 +57,7 @@ export function Header() {
 						<span className='text-xl font-semibold text-gray-900'>
 							Diagnos<span className='text-teal-600'>AI</span>.Life
 						</span>
-					</div>
+					</Link>
 
 					{/* Desktop Navigation */}
 					<nav className='hidden md:flex items-center gap-8'>
