@@ -68,12 +68,9 @@ export function trackEvent(action: string, category: string, label?: string, val
 export function trackWebVitals() {
 	if (typeof window !== 'undefined') {
 		// Track Core Web Vitals
-		import('web-vitals').then(({ onCLS, onFCP, onLCP, onTTFB, onINP }) => {
+		import('web-vitals').then(({ onCLS, onFCP, onLCP, onTTFB }) => {
 			onCLS((metric) => {
 				trackEvent('CLS', 'Web Vitals', metric.name, Math.round(metric.value * 1000));
-			});
-			onINP((metric) => {
-				trackEvent('INP', 'Web Vitals', metric.name, Math.round(metric.value));
 			});
 			onFCP((metric) => {
 				trackEvent('FCP', 'Web Vitals', metric.name, Math.round(metric.value));
