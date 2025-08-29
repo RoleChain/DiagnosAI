@@ -18,6 +18,9 @@ export function Footer() {
 						<Link href='/privacy' className='text-gray-600 hover:text-teal-600 transition-colors text-sm font-medium'>
 							Privacy Policy
 						</Link>
+						<Link href='/terms' className='text-gray-600 hover:text-teal-600 transition-colors text-sm font-medium'>
+							Terms & Conditions
+						</Link>
 					</nav>
 				</div>
 			</div>
