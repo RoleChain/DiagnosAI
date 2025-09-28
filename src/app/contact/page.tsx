@@ -40,7 +40,7 @@ const contactMethods = [
 		icon: MapPin,
 		title: 'Office Address',
 		description: 'Visit us at our headquarters',
-		contact: '123 Health Tech Blvd, San Francisco, CA 94105',
+		contact: '#100, 104, S R arcade, 6th Cross, Tulsi Theatre Road, Marathahalli, Bangalore -560037',
 		action: '#'
 	}
 ];
