@@ -12,6 +12,9 @@ export function Footer() {
 						<Link href='/pricing' className='text-gray-600 hover:text-teal-600 transition-colors text-sm font-medium'>
 							Pricing
 						</Link>
+						<Link href='/contact' className='text-gray-600 hover:text-teal-600 transition-colors text-sm font-medium'>
+							Contact
+						</Link>
 						<Link href='/refund' className='text-gray-600 hover:text-teal-600 transition-colors text-sm font-medium'>
 							Refund Policy
 						</Link>

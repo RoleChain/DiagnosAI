@@ -52,7 +52,7 @@ const refundSections = [
 		icon: CreditCard,
 		title: 'Refund Process',
 		content: [
-			'Contact our support team at support@diagnosai.life with your refund request',
+			'Contact our support team at hey@diagnos.ai with your refund request',
 			'Provide your account email and reason for the refund request',
 			'Our team will review and process eligible requests within 2 business days',
 			'Refunds are issued to the original payment method used',
@@ -239,7 +239,7 @@ export default function RefundPage() {
 								</div>
 								<h3 className='text-xl font-semibold text-gray-900 mb-3'>Contact Support</h3>
 								<p className='text-gray-600'>
-									Email us at support@diagnosai.life with your refund request and account details.
+									Email us at hey@diagnos.ai with your refund request and account details.
 								</p>
 							</div>
 							
@@ -280,7 +280,7 @@ export default function RefundPage() {
 						</p>
 						<div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
 							<a
-								href='mailto:support@diagnosai.life'
+								href='mailto:hey@diagnos.ai'
 								className='bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-300'>
 								Request Refund
 							</a>

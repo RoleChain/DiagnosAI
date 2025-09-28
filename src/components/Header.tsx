@@ -13,7 +13,7 @@ export function Header() {
 		{ label: 'How it Works', href: '#how-it-works' },
 		{ label: 'Pricing', href: '/pricing' },
 		{ label: 'About', href: '#about' },
-		{ label: 'Contact', href: '#contact' },
+		{ label: 'Contact', href: '/contact' },
 	];
 
 	const handleSmoothScroll = (
