@@ -19,8 +19,8 @@ const contactMethods = [
 		icon: Mail,
 		title: 'Email Support',
 		description: 'Get help via email within 24 hours',
-		contact: 'hey@diagnos.ai',
-		action: 'mailto:hey@diagnos.ai'
+		contact: 'hey@diagnosai.life',
+		action: 'mailto:hey@diagnosai.life'
 	},
 	{
 		icon: Phone,
