@@ -68,7 +68,7 @@ export default function ContactPage() {
 						</h1>
 						<p className='text-xl text-gray-600 max-w-3xl mx-auto mb-8'>
 							Have questions about DiagnosAI? Need support with your health journey? 
-							We're here to help you every step of the way.
+							We&apos;re here to help you every step of the way.
 						</p>
 						<div className='inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm'>
 							<Clock className='w-5 h-5 text-green-500' />
@@ -112,7 +112,7 @@ export default function ContactPage() {
 								Send Us a Message
 							</h2>
 							<p className='text-xl text-gray-600'>
-								Fill out the form below and we'll get back to you within 24 hours.
+								Fill out the form below and we&apos;ll get back to you within 24 hours.
 							</p>
 						</div>
 
